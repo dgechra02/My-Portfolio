@@ -8,6 +8,10 @@
   /* color-scheme: light dark; */
   /* yha color-scheme kam nhi karegi kyuki mene khud se de rkhi hai background-color and color */
 }
+html {
+  scroll-behavior: smooth;
+  /* to add smooth scroll behaviour when i clicking on buttons to navigate */
+}
 /* available for all the selectors */
 * {
   margin: 0;
@@ -55,12 +59,12 @@ header {
 
 nav,
 nav ul {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    font-weight: 400;
-    font-size: 22px;
-    list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-weight: 400;
+  font-size: 22px;
+  list-style: none;
 
   /* to remove dots from of li */
 }
@@ -100,8 +104,43 @@ nav ul {
   background-color: var(--primary-blue);
 }
 #toggleButton {
+  width: fit-content;
   padding: 0.3rem 0.6rem;
-  border-radius: 5px;
+  border-radius: 200px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+#toggleButton-light {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  background-color: blue;
+  align-items: center;
+  justify-content: center;
+}
+#toggleButton-light svg {
+  width: 20px;
+  fill: white;
+  /* i removed fill attribute from the path/circle/svg/rectangles  then this css fill is woking */
+}
+#toggleButton-dark {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#toggleButton-dark svg{
+  width: 20px;
+  fill: #C9CCD4;
 }
 
 /* intro section */
@@ -167,8 +206,8 @@ nav ul {
   justify-content: space-evenly;
 }
 .bodyy-dark {
-    background: linear-gradient(to right, #21201e, #2e2130);
-    color: white;
+  background: linear-gradient(to right, #21201e, #2e2130);
+  color: white;
 }
 
 /* myskills */
@@ -273,7 +312,7 @@ nav ul {
   gap: 8px;
   color: var(--primary-black-gray);
 }
-.video-section-title-dark{
+.video-section-title-dark {
   color: white;
 }
 .video-section-title span {
@@ -289,7 +328,7 @@ nav ul {
   align-items: center;
   justify-content: center;
 }
-.video-section-subtitle-dark{
+.video-section-subtitle-dark {
   color: #f2f2f2cc;
 }
 .video-section-button {
@@ -300,7 +339,7 @@ nav ul {
   background-color: var(--primary-orange1);
 }
 .video-section-button:hover {
-    background-color: #d05b13;
+  background-color: #d05b13;
 }
 .video-section-button a {
   color: white;
@@ -347,9 +386,8 @@ nav ul {
   padding: 25px;
   border-radius: 0 0 20px 20px;
 }
-.yt-video-details-dark{
+.yt-video-details-dark {
   background-color: #30302f;
-  
 }
 .yt-video-details-duration {
   width: 214px;
@@ -362,7 +400,7 @@ nav ul {
   align-items: center;
   margin: 7px 0;
 }
-.yt-video-details-duration-dark{
+.yt-video-details-duration-dark {
   color: #f2f2f2cc;
 }
 .yt-video-details-title {
@@ -375,7 +413,7 @@ nav ul {
   display: flex;
   align-items: center;
 }
-.yt-video-details-title-dark{
+.yt-video-details-title-dark {
   color: #f2f2f2cc;
 }
 .yt-video-details-coach {
@@ -385,7 +423,7 @@ nav ul {
   display: flex;
   align-items: center;
 }
-.yt-video-details-coach-dark{
+.yt-video-details-coach-dark {
   color: #f2f2f2cc;
 }
 /* projects-section */
@@ -407,7 +445,7 @@ nav ul {
   align-items: center;
   justify-content: center;
 }
-.projects-section-title-dark{
+.projects-section-title-dark {
   color: white;
 }
 .projects-section-about {
@@ -421,7 +459,7 @@ nav ul {
   align-items: center;
   justify-content: center;
 }
-.projects-section-about-dark{
+.projects-section-about-dark {
   color: #f2f2f2cc;
 }
 .projects-section-projects {
@@ -449,7 +487,7 @@ nav ul {
   padding: 30px;
   gap: 5px;
 }
-.projects-section-project-details-dark{
+.projects-section-project-details-dark {
   background-color: #30302f;
   color: #f2f2f2cc;
 }
@@ -472,7 +510,7 @@ nav ul {
   display: flex;
   align-items: center;
 }
-.projects-section-project-details-about-dark{
+.projects-section-project-details-about-dark {
   color: #f2f2f2cc;
 }
 .projects-section-project-details-description {
@@ -480,7 +518,7 @@ nav ul {
   height: fit-content;
   color: black;
 }
-.projects-section-project-details-description-dark{
+.projects-section-project-details-description-dark {
   color: #f2f2f2cc;
 }
 
@@ -503,7 +541,7 @@ nav ul {
   line-height: 60px;
   color: var(--primary-black-gray);
 }
-.education-section-title-dark{
+.education-section-title-dark {
   color: white;
 }
 .edu-section-desc {
@@ -515,7 +553,7 @@ nav ul {
   height: fit-content;
   gap: 10px;
 }
-.edu-section-desc-dark{
+.edu-section-desc-dark {
   color: #f2f2f2cc;
 }
 .education-section-description {
@@ -550,7 +588,7 @@ nav ul {
 .education-section-list-explorin-dark,
 .education-section-list-college-dark,
 .education-section-list-school1-dark,
-.education-section-list-school2-dark{
+.education-section-list-school2-dark {
   background-color: #30302f;
 }
 .education-section-list-explorin-details,
@@ -578,7 +616,7 @@ nav ul {
 .education-section-list-explorin-title-dark,
 .education-section-list-college-title-dark,
 .education-section-list-school1-title-dark,
-.education-section-list-school2-title-dark{
+.education-section-list-school2-title-dark {
   color: white;
 }
 .education-section-list-explorin-year,
@@ -605,7 +643,7 @@ nav ul {
 .education-section-list-explorin-course-dark,
 .education-section-list-college-course-dark,
 .education-section-list-school1-course-dark,
-.education-section-list-school2-course-dark{
+.education-section-list-school2-course-dark {
   color: #f2f2f2cc;
 }
 .education-section-list-explorin-image,

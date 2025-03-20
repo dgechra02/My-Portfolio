@@ -33,6 +33,21 @@
     width: 22px;
   }
 
+  #toggleButton-light {
+    width: 20px;
+    height: 20px;
+  }
+  #toggleButton-light svg {
+    width: 13px;
+  }
+  #toggleButton-dark {
+    width: 20px;
+    height: 20px;
+  }
+  #toggleButton-dark svg{
+    width: 13px;
+  }
+
   /* intro section */
   .intro {
     padding: 10px 10px;
