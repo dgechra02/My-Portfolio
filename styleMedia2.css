@@ -52,7 +52,7 @@
     font-size: 30px;
   }
   .profile-image {
-    display: block;
+    display: none;
     width: 100px;
     height: auto;
     border-radius: 10px;
@@ -68,8 +68,8 @@
     width: 100%;
   }
   .my-image img {
-    width: 250px;
-    display: none;
+    width: 175px;
+    /* display: none; */
   }
   .bodyy {
     padding: 50px 0;
@@ -86,7 +86,7 @@
     width: 87%;
     height: 50px;
     font-size: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .myskills-languages {
     width: 90%;
@@ -111,7 +111,7 @@
 
   /* video-section */
   .video-section {
-    gap: 10px;
+    /* gap: 10px; */
     margin-top: 50px;
   }
   .video-section-title {
@@ -123,7 +123,7 @@
   }
   .video-section-subtitle {
     width: 87%;
-    height: 35px;
+    height: 50px;
     font-size: 20px;
     margin-bottom: 5px;
   }
@@ -162,7 +162,7 @@
 
   /* projects-section */
   .projects-section {
-    gap: 18px;
+    /* gap: 18px; */
     margin-top: 50px;
   }
   .projects-section-title {
@@ -171,8 +171,9 @@
   }
   .projects-section-about {
     width: 87%;
-    height: 35px;
+    height: 50px;
     font-size: 20px;
+    margin-bottom: 10px;
   }
   .projects-section-projects {
     width: 90%;
@@ -202,6 +203,7 @@
   }
   .edu-section-desc {
     width: 100%;
+    margin-bottom: 10px;
   }
   .education-section-description {
     width: 87%;
