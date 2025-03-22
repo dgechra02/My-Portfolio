@@ -1,11 +1,11 @@
 :root {
   --primary-orange1: #f37021;
   --primary-orange2: #ff8153;
-  --primary-black-gray: red;
-  --pure-black: red;
-  --primary-black2: red;
-  --primary-blue: red;
-  --primary-light-blue: red;
+  --primary-black-gray: #172937;
+  --pure-black: #000000;
+  --primary-black2: #1f1f1f;
+  --primary-blue: #172737;
+  --primary-light-blue: #1e3040;
   /* color-scheme: light dark; */
   /* yha color-scheme kam nhi karegi kyuki mene khud se de rkhi hai background-color and color */
 }
